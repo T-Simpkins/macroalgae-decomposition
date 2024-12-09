@@ -1,5 +1,5 @@
 # Macroalgae detritus decomposition and cross-shelf carbon export from shallow and deep reefs
-This repository contains data and scripts relevant to *Limnology & Oceanography* article doi: XXXX. Description of data columns are in the following sections below.
+This repository contains data and scripts relevant to *Limnology & Oceanography* article doi: XXXX. Ocean model and particle tracking simulation data are freely available and can be requested from MvdM (mirjam.vandermheen@uwa.edu.au). Description of data columns are in the sections below.
 
 # Decomposition #
 #### '2021 Marmion Kelp Litter Data - Raw.csv' - decomposition measurements (biomass and chemical composition) in 2 study species
@@ -21,6 +21,14 @@ This repository contains data and scripts relevant to *Limnology & Oceanography*
 #### '2021 Marmion Kelp Decomp.R' - Code to analyse and visualize biomass and carbon and nitrogen decomposition in 2 study species
 - Input = '2021 Marmion Kelp Litter Data - Raw.csv' from Decomposition
 - Output = Figures 2-4 
-  
+
+# Particle tracking #
+#### 'export estimates 0-60 days.csv' - macroalgae detritus age and deep ocean export estimates (200 m depth +)
+- Particle age (days) = detrital age (days since detachment)
+- source reef depth = categorical variable with levels 10 - 20 m and 50 m representing depth (m) of source reef below sea level (lowest astronomical tide)
+- percentage of particles past shelf break (200m) = continuous variable; predicted percentage of detritus exported to the deep ocean (see data availability in description above)
+#### '2021 Marmion export model.R' - Code to analyse and visualize biomass and carbon and nitrogen decomposition in 2 study species
+- Input = 'export estimates 0-60 days.csv' from Particle tracking
+- Output = Figure 5
 
 
